@@ -1,0 +1,47 @@
+{
+  "name": "photoalbum-backend",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "hardhat compile",
+    "clean": "rimraf ./fhevmTemp ./artifacts ./cache ./deployments",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat deploy --network hardhat",
+    "deploy:anvil": "hardhat deploy --network anvil",
+    "deploy:sepolia": "hardhat deploy --network sepolia",
+    "export-abi": "node ./scripts/export-abi.mjs"
+  },
+  "devDependencies": {
+    "@fhevm/hardhat-plugin": "0.1.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.11.30",
+    "chai": "^4.5.0",
+    "cross-env": "^7.0.3",
+    "ethers": "^6.13.1",
+    "hardhat": "^2.26.0",
+    "hardhat-deploy": "^0.11.45",
+    "hardhat-gas-reporter": "^2.3.0",
+    "mocha": "^10.2.0",
+    "rimraf": "^6.0.1",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.8.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@zama-fhe/oracle-solidity": "^0.1.0",
+    "encrypted-types": "^0.0.4"
+  }
+}
+
+
