@@ -1,218 +1,134 @@
-# TokenUltra
+# CipherVault
 
-**A Privacy-First Blockchain Application**
+> Privacy‑preserving token platform powered by Zama FHEVM
 
-TokenUltra is a cutting-edge decentralized application that prioritizes user privacy and data security. Built on Ethereum and powered by Fully Homomorphic Encryption (FHE), it provides a secure platform for managing sensitive data while maintaining complete user control and privacy.
-
-## 🔒 What Makes TokenUltra Unique?
-
-### **End-to-End Privacy**
-Unlike traditional applications that store data in plaintext, TokenUltra encrypts all user data using Fully Homomorphic Encryption, ensuring that even the platform operators cannot access your private information.
-
-### **Decentralized Architecture**
-Built on blockchain technology, TokenUltra operates without central points of failure, giving users complete control over their data and eliminating single points of control.
-
-### **Zero-Knowledge Operations**
-All operations are performed on encrypted data without ever decrypting it, ensuring maximum privacy while maintaining full functionality.
-
-### **User Sovereignty**
-You own your data, you control your data, and you decide who can access it. No backdoors, no master keys, no compromises.
-
-## 🚀 Core Features
-
-- **🔒 End-to-End Encryption**: Your data is encrypted before leaving your device
-- **🌐 Blockchain Storage**: Decentralized storage ensures data integrity
-- **🔑 Wallet Integration**: Use your existing Web3 wallet for authentication
-- **⚡ Real-Time Operations**: Instant access to your encrypted data
-- **🛡️ Zero-Knowledge Architecture**: Even we can't see your encrypted information
-- **📱 Modern Interface**: Clean, intuitive design built with React
-- **🔧 Developer Friendly**: Open source with comprehensive documentation
-
-## 🏗️ Technical Architecture
-
-### **Smart Contract Layer**
-- **TokenUltra.sol**: Main application contract
-- **EncryptionManager.sol**: Handles cryptographic operations
-- **StorageManager.sol**: Manages encrypted data storage
-- **AccessControl.sol**: Implements permission systems
-
-### **Frontend Application**
-- **React + TypeScript**: Modern, type-safe development
-- **Web3 Integration**: Seamless wallet connectivity
-- **Responsive Design**: Works on all devices
-- **Real-time Updates**: Live data synchronization
-
-### **Cryptographic Stack**
-- **FHEVM**: Zama's Fully Homomorphic Encryption
-- **ChaCha20**: Fast, secure symmetric encryption
-- **EIP-712**: Secure message signing
-- **Keccak256**: Cryptographic hashing
-
-## 🎯 Use Cases
-
-### **Personal Data Management**
-- Secure document storage
-- Private note-taking
-- Personal information vault
-- Encrypted file sharing
-
-### **Business Applications**
-- Confidential data storage
-- Secure communication
-- Compliance management
-- Audit trail maintenance
-
-### **Developer Tools**
-- Encrypted configuration storage
-- Secure API key management
-- Private code repositories
-- Development environment secrets
-
-## 🛠️ Getting Started
-
-### **Prerequisites**
-- MetaMask or compatible Web3 wallet
-- Ethereum Sepolia testnet ETH
-- Modern web browser with Web3 support
-
-### **Installation**
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/logernyk/TokenUltra.git
-   cd tokenultra
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment**
-   ```bash
-   cp .env.example .env.local
-   # Add your configuration settings
-   ```
-
-4. **Deploy contracts**
-   ```bash
-   npm run deploy:sepolia
-   ```
-
-5. **Start the application**
-   ```bash
-   cd app
-   npm run dev
-   ```
-
-### **How to Use**
-
-1. **Connect your wallet** to the platform
-2. **Set up your profile** and security settings
-3. **Start storing data** securely on the blockchain
-4. **Manage permissions** for data access
-5. **Share securely** with trusted parties
-6. **Monitor activity** through the dashboard
-
-## 🔒 Security & Privacy
-
-### **Encryption at Rest**
-- All data encrypted before storage
-- Multiple encryption layers
-- Zero-knowledge architecture
-- Tamper-proof storage
-
-### **Encryption in Transit**
-- HTTPS for all communications
-- Wallet signatures prevent replay attacks
-- Time-limited access tokens
-- Secure key exchange protocols
-
-### **Access Control**
-- Only you can decrypt your data
-- No backdoors or master keys
-- Complete user sovereignty
-- Transparent permission system
-
-## 🌟 Roadmap
-
-### **Phase 1: Core Platform** ✅
-- Basic encryption and storage
-- Wallet integration
-- Web interface
-- FHE implementation
-
-### **Phase 2: Enhanced Security** 🚧
-- Multi-signature support
-- Hardware wallet integration
-- Advanced access controls
-- Security audit
-
-### **Phase 3: Advanced Features** 📋
-- File encryption support
-- Sharing capabilities
-- Mobile applications
-- API development
-
-### **Phase 4: Enterprise Solutions** 🔮
-- Team collaboration features
-- Compliance tools
-- Enterprise integrations
-- Professional support
-
-## 🤝 Contributing
-
-We welcome contributions from developers, security researchers, and privacy advocates!
-
-### **How to Contribute**
-- Fork the repository
-- Create a feature branch
-- Implement your changes
-- Submit a pull request
-
-### **Areas We Need Help**
-- 🔐 Security audits and reviews
-- 🎨 UI/UX improvements
-- 📚 Documentation and tutorials
-- 🧪 Testing and quality assurance
-- 🌍 Internationalization
-
-## 📊 Project Statistics
-
-- **Smart Contract Size**: ~3.5 KB (optimized)
-- **Frontend Bundle**: ~350 KB (gzipped)
-- **Gas Cost per Operation**: ~120,000 gas
-- **Test Coverage**: 90%+ (target: 95%)
-- **Languages**: TypeScript, Solidity, CSS
-
-## 📝 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-Special thanks to:
-- **Zama** for pioneering FHEVM technology
-- **Ethereum Foundation** for decentralized infrastructure
-- **Privacy advocates** for pushing boundaries
-- **The Web3 community** for innovation
-
-## 📞 Support & Community
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/logernyk/TokenUltra/issues)
-- **Documentation**: [Full documentation](https://github.com/logernyk/TokenUltra/wiki)
-- **Discord**: [Join our community](https://github.com/logernyk/TokenUltra/discussions)
-- **Twitter**: [Follow for updates](https://github.com/logernyk/TokenUltra)
-
-## 🔗 Links
-
-- **Repository**: [https://github.com/logernyk/TokenUltra](https://github.com/logernyk/TokenUltra)
-- **Live Demo**: [Try it now](https://github.com/logernyk/TokenUltra)
-- **Documentation**: [User Guide](https://github.com/logernyk/TokenUltra/wiki)
-- **API Docs**: [Developer Resources](https://github.com/logernyk/TokenUltra/api)
+CipherVault is a confidential ERC‑style token system that keeps balances, transfers, and allowances private. Using Fully Homomorphic Encryption (FHE) with Zama’s FHEVM, the protocol performs token accounting over encrypted data while preserving public verifiability of supply and settlement.
 
 ---
 
-**Built with ❤️ for Privacy**
+## Why CipherVault
 
-*TokenUltra - Where your data stays yours, forever.*
+- ❌ Public balances reveal user behavior → ✅ Encrypted balances and transfers
+- ❌ Traceable allowances and approvals → ✅ Private allowances and spend limits
+- ❌ Opaque privacy guarantees → ✅ On‑chain, verifiable FHEVM computations
+
+---
+
+## Zama FHEVM for Private Tokens
+
+FHEVM lets smart contracts operate on ciphertexts. CipherVault updates balances, checks allowances, and settles transfers without ever decrypting user data.
+
+```
+Holder Client
+  └─ FHE Encrypt (amount, recipient)
+         └─ Encrypted Tx → FHEVM Contracts
+                              └─ Encrypted Balance/Allowance Checks
+                                       └─ Encrypted Settlement → Verifiable Event
+```
+
+Key properties
+- No plaintext balances or allowances on‑chain
+- Encrypted mint/burn/transfer/approve flows
+- Auditable total supply and settlement proofs
+
+---
+
+## Getting Started
+
+Prerequisites: Node.js 18+, MetaMask, Sepolia ETH
+
+Setup
+```bash
+git clone https://github.com/logernyk/CipherVault
+cd CipherVault
+npm install
+cp .env.example .env.local
+```
+
+Deploy
+```bash
+npm run deploy:sepolia
+```
+
+Run
+```bash
+npm run dev
+```
+
+---
+
+## Token Flows
+
+1) Mint: authority mints to an encrypted address balance
+2) Approve: holder sets encrypted allowance for a spender
+3) Transfer: encrypted transfer updates encrypted balances
+4) Burn: reduce supply via encrypted burn
+
+Privacy model
+- Encrypted: balances, amounts, allowances
+- Transparent: total supply, event emissions, contract code
+
+---
+
+## Architecture
+
+| Layer            | Technology            | Role                                   |
+|------------------|-----------------------|----------------------------------------|
+| Encryption       | Zama FHE              | Client‑side encryption of token data    |
+| Smart Contracts  | Solidity + FHEVM      | Encrypted accounting & settlement       |
+| Blockchain       | Ethereum Sepolia      | Execution & persistence                 |
+| Frontend         | React + TypeScript    | Wallet UI + local crypto                |
+| Tooling          | Hardhat, Ethers       | Build/test/deploy                       |
+
+Core contracts
+- CipherVaultToken: encrypted ERC‑style accounting
+- Treasury/Authority: mint/burn roles and policy hooks
+- Proofs/Views: public supply and settlement views
+
+---
+
+## Features
+
+- 🔐 Encrypted balances and transfers
+- 🧾 Private allowances and approvals
+- 🧮 Public total supply proofs
+- 🧩 Policy modules (caps, roles, fees)
+
+---
+
+## Security & Best Practices
+
+- Independent audits for circuits and contracts recommended
+- EIP‑712 signed intents and nonce schemes
+- Rotate FHE keys periodically; minimize metadata
+- Monitor gas footprint of FHE computations
+
+---
+
+## Roadmap
+
+- v1: Core encrypted ERC‑style token
+- v1.1: Private allowances with delegated spend
+- v1.2: Cross‑chain bridges (privacy‑preserving proofs)
+
+---
+
+## Contributing
+
+Contributions welcome: performance, audits, policy modules, bridges, UI/UX.
+
+---
+
+## Resources
+
+- Zama: https://www.zama.ai
+- FHEVM Docs: https://docs.zama.ai/fhevm
+- Sepolia Explorer: https://sepolia.etherscan.io
+
+---
+
+## License
+
+MIT — see LICENSE.
+
+Built with Zama FHEVM — private balances, verifiable supply, trustworthy settlement.
